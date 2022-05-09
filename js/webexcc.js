@@ -16,6 +16,11 @@ async function sendRequest(bodyText) {
 	var myHeaders = new Headers();
 	myHeaders.append("Content-Type", "application/json");
 
+	const fn = document.getElementById("firstname");
+	const ln = document.getElementById("lastname");
+	const ma = document.getElementById("mail");
+	const pn = document.getElementById("tell");
+	
 	var raw = JSON.stringify({
 		"destination":"+14402079228",
 		"Lastname":"Nakano",
@@ -23,6 +28,8 @@ async function sendRequest(bodyText) {
 		"Email":"email@gmail.com",
 		"Phone":"09012345678"
 	});
+	
+	var raw = '{"destination":"+14402079228", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
 	
 	var requestOptions = {
 		method: 'POST',
