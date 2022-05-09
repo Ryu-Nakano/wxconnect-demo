@@ -30,6 +30,7 @@ async function sendRequest(bodyText) {
 	});
 	
 	var raw = '{"destination":"+14402079228", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
+	console.log(raw);
 	
 	var requestOptions = {
 		method: 'POST',
