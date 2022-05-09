@@ -16,10 +16,10 @@ async function sendRequest(bodyText) {
 	var myHeaders = new Headers();
 	myHeaders.append("Content-Type", "application/json");
 
-	var fn = document.getElementById("firstname").value;
-	var ln = document.getElementById("lastname").value;
-	var ma = document.getElementById("mail").value;
-	var pn = document.getElementById("tell").value;
+	const fn = document.getElementById("firstname").value;
+	const ln = document.getElementById("lastname").value;
+	const ma = document.getElementById("mail").value;
+	const pn = document.getElementById("tell").value;
 	
 	var raw = JSON.stringify({
 		"destination":"+14402079228",
