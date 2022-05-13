@@ -40,11 +40,11 @@ async function sendRequest(bodyText) {
 	};
 	
 	// リクエスト送信
-	const response = await fetch("https://hooks-us.imiconnect.io/events/MOQL45SKB2", requestOptions);
+	const response = await fetch("https://hooks-us.imiconnect.io/events/LXQRGKL38D", requestOptions);
 	const links = await response.json();
 	console.log(links);
 	
-	alert('問い合わせ内容を送信いたしました。')
+	alert('ビデオリンクを送信しました。')
 	
 	return links;
 }
