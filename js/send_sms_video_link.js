@@ -16,6 +16,8 @@ async function sendRequest(bodyText) {
 	var myHeaders = new Headers();
 	myHeaders.append("Content-Type", "application/json");
 
+	const dt = document.getElementById("destination").value;
+
 	const fn = document.getElementById("firstname").value;
 	const ln = document.getElementById("lastname").value;
 	const ma = document.getElementById("mail").value;
