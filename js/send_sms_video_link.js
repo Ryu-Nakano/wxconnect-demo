@@ -31,7 +31,7 @@ async function sendRequest(bodyText) {
 		"Phone":"09012345678"
 	});
 	
-	var raw = '{"destination":"+14402079228", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
+	var raw = '{"destination":"' + dt + '", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
 	console.log(raw);
 	
 	var requestOptions = {
