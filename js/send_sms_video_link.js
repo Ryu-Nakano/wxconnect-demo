@@ -48,8 +48,10 @@ async function sendRequest(bodyText) {
 	
 //	alert('ビデオリンクを送信しました。')
 	var retArea = document.getElementById("retArea");
-	btnSend
+	var btnArea = document.getElementById("btnSend");
+	
 	retArea.insertAdjacentHTML = "ビデオリンクを送信しました。";
+	btnArea.insertAdjacentHTML = "ビデオリンクを送信しました。";
 	
 	return links;
 }
