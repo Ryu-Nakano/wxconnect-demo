@@ -47,10 +47,8 @@ async function sendRequest(bodyText) {
 //	console.log(links);
 	
 //	alert('ビデオリンクを送信しました。')
-	var retArea = document.getElementById("retArea");
 	var btnArea = document.getElementById("btnSend");
 	
-	retArea.innerHTML='ビデオリンクを送信しました。';
 	btnArea.innerHTML='ビデオリンクを送信しました。';
 	
 //	return links;
