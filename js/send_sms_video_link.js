@@ -42,11 +42,13 @@ async function sendRequest(bodyText) {
 	};
 	
 	// リクエスト送信
-	const response = await fetch("https://hooks-us.imiconnect.io/events/LXQRGKL38D", requestOptions);
-	const links = await response.json();
+//	const response = await fetch("https://hooks-us.imiconnect.io/events/LXQRGKL38D", requestOptions);
+//	const links = await response.json();
 	console.log(links);
 	
-	alert('ビデオリンクを送信しました。')
+//	alert('ビデオリンクを送信しました。')
+	var retArea = document.getElementById("retArea");
+	retArea.innerHTML = "ビデオリンクを送信しました。";
 	
 	return links;
 }
