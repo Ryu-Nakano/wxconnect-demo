@@ -53,6 +53,7 @@ async function sendRequest(bodyText) {
 	retArea.insertAdjacentHTML = "ビデオリンクを送信しました。";
 	btnArea.insertAdjacentHTML = "ビデオリンクを送信しました。";
 	
-	return links;
+//	return links;
+	return 0;
 }
 
