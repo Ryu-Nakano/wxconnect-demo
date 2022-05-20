@@ -50,7 +50,7 @@ async function sendRequest(bodyText) {
 	var retArea = document.getElementById("retArea");
 	var btnArea = document.getElementById("btnSend");
 	
-	retArea.insertAdjacentHTML('afterbegin','ビデオリンクを送信しました。');
+	retArea.innerHTML='ビデオリンクを送信しました。';
 	btnArea.insertAdjacentHTML('afterbegin','ビデオリンクを送信しました。');
 	
 //	return links;
