@@ -141,3 +141,14 @@ a.btn--green:hover {
   color: #000;
   background: #ffffff;
 }
+
+
+.sendInfo {
+  color: #fff;
+  width: 100%;
+  background-color: #078855;
+  text-align: center;
+  font-size: 35px;
+
+}
+
