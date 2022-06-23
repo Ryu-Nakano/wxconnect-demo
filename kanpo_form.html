@@ -1,11 +1,11 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/favicon-webex-teams.ico">
-    <link rel="stylesheet" href="../style/visiting.css">
+    <link rel="stylesheet" href="./style/kanpo_form.css">
     <title>かんぽ生命|資料請求</title>
+    <script type="text/javascript" src="./js/wxconnect_kanpo.js"></script>
+</head>
+
 <body>
     <div id="contact-form" class="form-all">
         <div>
@@ -18,19 +18,19 @@
             <div>
                 <label for="name_p">
                   <span class="required">住所</span> 
-                  <input type="text" id="name_p" name="name_p" value="" placeholder="" required="required" tabindex="1" autofocus="autofocus" />
+                  <input type="text" id="address" name="name_p" value="" placeholder="" required="required" tabindex="1" autofocus="autofocus" />
                 </label> 
             </div>
             <div class="name_f">
                 <label for="name_f">
-                  <span class="required">お名前</span> 
-                  <input type="text" id="name_f" name="name_f" value="" placeholder="" required="required" tabindex="2" autofocus="autofocus" />
+                  <span class="required">お名前（姓）</span> 
+                  <input type="text" id="firstname" name="name_f" value="" placeholder="" required="required" tabindex="2" autofocus="autofocus" />
                 </label> 
             </div>
             <div class="relation">
                 <label for="relation">
-                  <span class="required">フリガナ</span> 
-                  <input type="text" id="relation" name="relation" value="" placeholder="" required="required" tabindex="3" autofocus="autofocus" />
+                  <span class="required">お名前（名）</span> 
+                  <input type="text" id="lastname" name="relation" value="" placeholder="" required="required" tabindex="3" autofocus="autofocus" />
                 </label> 
             </div>
             <div class="email">
@@ -45,50 +45,9 @@
                   <input type="tel" id="telephone" name="telephone" value="" placeholder="" tabindex="5" required="required" />
                 </label>  
             </div>
-            <div class="date1">
-                <label for="date1">
-                  <span class="required">第一希望</span>
-                  <input type="date" id="date1" name="date1" value="" placeholder="" tabindex="6" required="required" />
-                </label>
-            </div>
-            <div class="time1">
-                <label for="time1">
-                    <span>時間</span>
-                      <select id="time1" name="time1" tabindex="7">   
-                        <option value="time1-0">ーー</option>
-                        <option value="time1-1">14:00～14:30</option>
-                        <option value="time1-2">14:30～15:00</option>
-                        <option value="time1-3">15:00～15:30</option>
-                        <option value="time1-4">15:30～16:00</option>
-                      </select>
-                </label>  
-            </div>
-            <div class="date2">
-                <label for="date2">
-                  <span class="required">第二希望</span>
-                  <input type="date" id="date" name="date" value="" placeholder="" tabindex="8" required="required" />
-                </label>  
-            </div>
-            <div class="time2">          
-                <label for="time2">
-                <span>時間</span>
-                  <select id="time2" name="time2" tabindex="9">
-                    <option value="time2-0">ーー</option>   
-                     <option value="time2-1">14:00～14:30</option>
-                     <option value="time2-2">14:30～15:00</option>
-                     <option value="time2-3">15:00～15:30</option>
-                     <option value="time2-4">15:30～16:00</option>
-                  </select>
-                </label>
-            </div>
-            <div>             
-                <label for="message">
-                  <span>相談内容</span> 
-                  <textarea id="message" name="message" placeholder="" tabindex="10" required=""></textarea> 
-                </label>  
-            </div>
             <div>              
-                <button name="submit" type="submit" id="submit" onclick="location.href='public.html'">送信</button> 
+                <button name="submit" type="submit" id="submit" onclick="sendRequest(' ')">送信</button> 
+
             </div>
              </form>
       
