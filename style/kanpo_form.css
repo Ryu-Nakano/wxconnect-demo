@@ -129,3 +129,15 @@ input:required, textarea:required {
 .relation, .time1, .time2, .telephone{
    margin-left: 20px;
 }
+
+.btn--green,
+a.btn--green {
+  width: 370px;
+  color: #fff;
+  background-color: #078855;
+}
+.btn--green:hover,
+a.btn--green:hover {
+  color: #000;
+  background: #ffffff;
+}
