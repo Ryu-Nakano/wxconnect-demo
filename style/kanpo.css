@@ -1,0 +1,113 @@
+html{
+/*   background:url(../img/kanpo_back.png?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat;*/
+/*   background-size: cover;*/
+   height:100%; 
+   background-color: #FFFFFF; 
+}
+
+body {
+}
+
+table {
+   border-spacing: 20px 900px;
+}
+
+.wrapper {
+   background:url(../img/kanpo_back.png) no-repeat;
+   height: 2900px;
+   width: 1920px;
+   background-color: #FFFFFF; 
+   margin: 2px;
+}
+
+
+.act {
+   color: red; 
+   margin: 1px 1px 1px 955px;
+}
+
+
+a.btn--green {
+  width: 370px;
+  color: #fff;
+  background-color: #078855;
+}
+.btn--green:hover,
+a.btn--green:hover {
+  color: #000;
+  background: #ffffff;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+
+.btn--white,
+a.btn--white {
+  width: 160px;
+  color: #fff;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+}
+.btn--white:hover,
+a.btn--white:hover {
+  color: #000;
+  background: #ffffff;
+}
+
+
+
+a.btn--red {
+  width: 620px;
+  height: 80px;
+  color: #fff;
+  background-color: #ff393a;
+
+  font-size: 35px;
+  padding: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+
+}
+.btn--red:hover,
+a.btn--red:hover {
+  color: #000;
+  background: #fffff0;
+
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+
+}
+
+
+
+.btn,
+a.btn,
+button.btn {
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+}
+
+input[type=text]{
+width:370px;
+height:30px;
+}
