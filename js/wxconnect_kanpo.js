@@ -1,18 +1,18 @@
-// •Ï”’è‹`
-// ‚È‚µ
+// å¤‰æ•°å®šç¾©
+// ãªã—
 
 
 /*-----------------------------------------------------------*/
 /* sendRequest 
 /*-----------------------------------------------------------*/
-// ˆø”iINj
-//  bodyText:–â‚¢‡‚í‚¹“à—e
-// –ß‚è’liOUTj
-//  ì¬ƒŠƒ“ƒNî•ñ
+// å¼•æ•°ï¼ˆINï¼‰
+//  bodyText:å•ã„åˆã‚ã›å†…å®¹
+// æˆ»ã‚Šå€¤ï¼ˆOUTï¼‰
+//  ä½œæˆãƒªãƒ³ã‚¯æƒ…å ±
 /*-----------------------------------------------------------*/
 async function sendRequest(bodyText) {
 	
-	// ƒŠƒNƒGƒXƒgì¬
+	// ãƒªã‚¯ã‚¨ã‚¹ãƒˆä½œæˆ
 	var myHeaders = new Headers();
 	myHeaders.append("Content-Type", "application/json");
 
@@ -39,12 +39,12 @@ async function sendRequest(bodyText) {
 		redirect: 'follow'
 	};
 	
-	// ƒŠƒNƒGƒXƒg‘—M
+	// ãƒªã‚¯ã‚¨ã‚¹ãƒˆé€ä¿¡
 	const response = await fetch("https://hooks-us.imiconnect.io/events/MOQL45SKB2", requestOptions);
 	const links = await response.json();
 	console.log(links);
 	
-	alert('–â‚¢‡‚í‚¹“à—e‚ğ‘—M‚¢‚½‚µ‚Ü‚µ‚½B')
+	alert('å•ã„åˆã‚ã›å†…å®¹ã‚’é€ä¿¡ã„ãŸã—ã¾ã—ãŸã€‚')
 	
 	return links;
 }
