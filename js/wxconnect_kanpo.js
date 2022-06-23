@@ -40,7 +40,10 @@ async function sendRequest(bodyText) {
 	};
 	
 	// リクエスト送信
-	const response = await fetch("https://hooks-us.imiconnect.io/events/MOQL45SKB2", requestOptions);
+	// SMS: const response = await fetch("https://hooks-us.imiconnect.io/events/MOQL45SKB2", requestOptions);
+	// Email
+	const response = await fetch("https://hooks-us.imiconnect.io/events/J5DESEQ8QG", requestOptions);
+	
 	const links = await response.json();
 	console.log(links);
 	
