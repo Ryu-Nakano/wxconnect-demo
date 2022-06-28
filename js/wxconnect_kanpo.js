@@ -41,6 +41,9 @@ async function sendRequest(bodyText) {
 		redirect: 'follow'
 	};
 	
+	// Add For Japanese...
+	var requestOptions = encodeURIComponent(requestOptions);
+	
 	// リクエスト送信
 	// SMS: const response = await fetch("https://hooks-us.imiconnect.io/events/MOQL45SKB2", requestOptions);
 	// Email
