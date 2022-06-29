@@ -18,9 +18,8 @@ async function sendRequest(bodyText) {
 
 	const fn = document.getElementById("firstname").value;
 	const ln = document.getElementById("lastname").value;
-	const ma = document.getElementById("email").value;
+	const ma = document.getElementById("mail").value;
 	const pn = document.getElementById("telephone").value;
-	const ad = document.getElementById("address").value;
 	
 	
 	var raw = JSON.stringify({
@@ -31,7 +30,7 @@ async function sendRequest(bodyText) {
 		"Phone":"09012345678"
 	});
 	
-	var raw = '{"destination":"+15162001844", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '", "Address":"' + ad +'"}';
+	var raw = '{"destination":"+15162001844", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
 	console.log(raw);
 	
 	var requestOptions = {
