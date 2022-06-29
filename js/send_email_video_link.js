@@ -19,7 +19,7 @@ async function sendRequest(bodyText) {
 	const fn = document.getElementById("firstname").value;
 	const ln = document.getElementById("lastname").value;
 	const ma = document.getElementById("mail").value;
-	const pn = document.getElementById("telephone").value;
+	const pn = document.getElementById("tell").value;
 	
 	
 	var raw = JSON.stringify({
