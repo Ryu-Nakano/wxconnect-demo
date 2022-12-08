@@ -43,7 +43,7 @@ async function sendRequest(bodyText) {
 //	alert('ビデオリンクを送信しました。')
 	var btnArea = document.getElementById("btnSend");
 	
-	btnArea.innerHTML='ビデオリンクを送信しました';
+	btnArea.innerHTML='異常検知を送信しました';
 	
 //	return links;
 	return 0;
