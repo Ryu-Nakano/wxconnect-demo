@@ -1,0 +1,44 @@
+.btn--green,
+a.btn--green {
+	width: 300px;
+	color: #fff;
+	background-color: #078855;
+}
+
+.btn--green:hover,
+a.btn--green:hover {
+	color: #fff;
+	background-color: #078855;
+}
+
+a.btn--radius {
+	border-radius: 100vh;
+}
+
+.btn,
+a.btn,
+button.btn {
+	font-size: 1.1rem;
+	font-weight: 200;
+	line-height: 1.5;
+	position: relative;
+	display: inline-block;
+	padding: 1rem 1rem;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	border-radius: 0.5rem;
+}
+
+input[type=text]{
+	width:100px;
+	height:35px;
+}
