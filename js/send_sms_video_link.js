@@ -23,13 +23,13 @@ async function sendRequest(bodyText) {
 	const ma = document.getElementById("mail").value;
 	const pn = document.getElementById("tell").value;
 	
-	var raw = JSON.stringify({
-		"destination":"+14402079228",
-		"Lastname":"Nakano",
-		"Firstname":"Ryu",
-		"Email":"email@gmail.com",
-		"Phone":"09012345678"
-	});
+//	var raw = JSON.stringify({
+//		"destination":"+14402079228",
+//		"Lastname":"Nakano",
+//		"Firstname":"Ryu",
+//		"Email":"email@gmail.com",
+//		"Phone":"09012345678"
+//	});
 	
 	var raw = '{"destination":"' + dt + '", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
 	console.log(raw);
@@ -42,9 +42,9 @@ async function sendRequest(bodyText) {
 	};
 	
 	// リクエスト送信
-//	const response = await fetch("https://hooks-us.imiconnect.io/events/LXQRGKL38D", requestOptions);
-//	const links = await response.json();
-//	console.log(links);
+	const response = await fetch("https://hooks-sandbox.imiconnect.io/events/MSHGIDLG9D", requestOptions);
+	const links = await response.json();
+	console.log(links);
 	
 //	alert('ビデオリンクを送信しました。')
 	var btnArea = document.getElementById("btnSend");
