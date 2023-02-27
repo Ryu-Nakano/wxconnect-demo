@@ -18,23 +18,23 @@ async function sendRequest(bodyText) {
 
 	const did = document.getElementById("deviceID").value;
 	const eid = document.getElementById("eventID").value;
+	const tnum = document.getElementById("telNum").value;
 	
 	var raw = JSON.stringify({
 		"deviceID":"dev1001",
 		"eventID":"event1001"
 	});
 	
-//	var raw = '{"destination":"' + dt + '", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
-	var raw = '{"deviceID":"' + eid + '", "eventID":"' + eid + '"}';
+	var raw = '{"deviceID":"' + did + '", "eventID":"' + eid + '", "telNum":"' + tnum + '"}';
 	console.log(raw);
-	
+
 	var requestOptions = {
 		method: 'POST',
 		headers: myHeaders,
 		body: raw,
 		redirect: 'follow'
 	};
-	
+
 	// リクエスト送信
 	const response = await fetch("https://hooks-sandbox.imiconnect.io/events/A7E8RBA316", requestOptions);
 	const links = await response.json();

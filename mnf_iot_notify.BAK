@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style/form.css">
-	<script type="text/javascript" src="./js/send_sms_video_link.js"></script>
+	<script type="text/javascript" src="./js/mnf_iot_notify.js"></script>
 	<title>製造業向け | IOT検知フォーム </title>
 
 
@@ -30,10 +30,12 @@ td.a {
 			<td rowspan="10" width="50"></td>
 			<td width="400" id="a">デバイスID</td>
 			<td>イベントID</td>
+			<td>宛先</td>
 		</tr>
 		<tr>
 			<td><input type="text" id="deviceID" name="deviceID" required size="45" value="dev1001"></td>
 			<td><input type="text" id="eventID" name="eventID" required size="45" value="event1001"></td>
+			<td><input type="text" id="telNum" name="telNum" required size="45" value="+818034779718"></td>
 		</tr>
 		<tr>
 			<td colspan="2"><a href="#" id="btnSend" class="btn btn--green btn--radius" onclick="sendRequest(' ')">異常検知ボタン</a></td>
