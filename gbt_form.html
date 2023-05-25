@@ -1,0 +1,55 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/gbt_form.css">
+    <title>旅行の手配</title>
+    <script type="text/javascript" src="./js/wxconnect_gbt.js"></script>
+</head>
+
+<body>
+    <div id="contact-form" class="form-all">
+        <div>
+          <h1>旅行の手配<br>申し込みフォーム</h1> 
+          <h4>海外出張</h4> 
+        </div>
+          <p id="failure">エラーが発生しました。入力内容をご確認ください。</p>  
+          <p id="success">申請が完了しました。結果については連絡先にお知らせいたします。</p>
+            <form method="post" action="/">
+            <div>
+                <label for="name_p">
+                  <span class="required">渡航先の都市、または、住所</span> 
+                  <input type="text" id="address" name="name_p" value="Sydney" placeholder="" required="required" tabindex="1" autofocus="autofocus" />
+                </label> 
+            </div>
+            <div class="relation">
+                <label for="relation">
+                  <span class="required">お名前（姓）</span> 
+                  <input type="text" id="lastname" name="relation" value="中野" placeholder="" required="required" tabindex="3" autofocus="autofocus" />
+                </label> 
+            </div>
+            <div class="name_f">
+                <label for="name_f">
+                  <span class="required">お名前（名）</span> 
+                  <input type="text" id="firstname" name="name_f" value="龍" placeholder="" required="required" tabindex="2" autofocus="autofocus" />
+                </label> 
+            </div>
+            <div class="email">
+                <label for="email">
+                  <span class="required">メールアドレス</span>
+                  <input type="email" id="email" name="email" value="wxcc.jp.customer@gmail.com" placeholder="" tabindex="4" required="required" />
+                </label>  
+            </div>
+            <div class="telephone">
+                <label for="telephone">
+                  <span class="required">電話番号</span>
+                  <input type="tel" id="telephone" name="telephone" value="03 6434 2158" placeholder="" tabindex="5" required="required" />
+                </label>  
+            </div>
+            <div class="sendInfo">              
+                <a href="#" class="btn btn--green btn--radius" onclick="sendRequest(' ')">送信</a> 
+            </div>
+             </form>
+      
+        </div>
+</body>
+</html>
