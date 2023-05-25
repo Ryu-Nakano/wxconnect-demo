@@ -126,7 +126,7 @@ input:required, textarea:required {
    display:inline-block;
 }
 
-.relation, .time1, .time2, .telephone{
+.name_f, .time1, .time2, .telephone{
    margin-left: 20px;
 }
 

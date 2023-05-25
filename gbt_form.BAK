@@ -15,22 +15,22 @@
           <p id="failure">エラーが発生しました。入力内容をご確認ください。</p>  
           <p id="success">申請が完了しました。結果については連絡先にお知らせいたします。</p>
             <form method="post" action="/">
-            <div>
+            <div class="name_p">
                 <label for="name_p">
                   <span class="required">渡航先の都市、または、住所</span> 
-                  <input type="text" id="address" name="name_p" value="" placeholder="" required="required" tabindex="1" autofocus="autofocus" />
+                  <input type="text" id="address" name="name_p" value="Sydney" placeholder="" required="required" tabindex="1" autofocus="autofocus" />
                 </label> 
             </div>
             <div class="relation">
                 <label for="relation">
                   <span class="required">お名前（姓）</span> 
-                  <input type="text" id="lastname" name="relation" value="中野" placeholder="" required="required" tabindex="3" autofocus="autofocus" />
+                  <input type="text" id="lastname" name="relation" value="中野" placeholder="" required="required" tabindex="2" autofocus="autofocus" />
                 </label> 
             </div>
-            <div class="name_f">
+            <div class="">
                 <label for="name_f">
                   <span class="required">お名前（名）</span> 
-                  <input type="text" id="firstname" name="name_f" value="龍" placeholder="" required="required" tabindex="2" autofocus="autofocus" />
+                  <input type="text" id="firstname" name="name_f" value="龍" placeholder="" required="required" tabindex="3" autofocus="autofocus" />
                 </label> 
             </div>
             <div class="email">
