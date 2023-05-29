@@ -43,7 +43,7 @@ async function sendRequest(bodyText) {
 	
 	// リクエスト送信
 	// Email
-	const response = await fetch("https://hooks.us.webexconnect.io/events/GB5NG5A0WF", requestOptions);
+	const response = await fetch("https://hooks.us.webexconnect.io/events/OQOC1T14ZA", requestOptions);
 	
 	const links = await response.json();
 	console.log(links);
