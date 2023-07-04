@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/form_sms.css">
+	<script type="text/javascript" src="./js/send_sms_survey_link.js"></script>
+	<title>Cisco Webex | アンケートリンクの送付 </title>
+
+
+<body bgcolor="#191919">
+
+<style>
+<!--
+td.a {
+	color: #fff;
+	font-size: xx-large;
+}
+-->
+
+</style>
+
+<div style="background: url(videoReq_form.jpg); background-repeat: no-repeat;">
+	<p>
+	</p>
+	<p >
+	<table>
+		<tr>
+			<td rowspan="10" width="50"></td>
+			<td width="150" id="a">姓</td>
+			<td width="150" id="b">名</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="lastname" name="lastname" size="50" required size="50" value="照憲"></td>
+			<td><input type="text" id="firstname" name="firstname" size="50" required size="50" value="柳原"></td>
+		</tr>
+		<tr>
+			<td>メール</td>
+			<td>電話番号</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="mail" name="mail" size="40" value="myanagih@cisco.com"></td>
+			<td><input type="text" id="tell" name="tell" size="40" value="+817043693251"></td>
+		</tr>
+		<tr>
+			<td>
+				<BR>
+				<input type="hidden" id="destination" name="destination" value="+15094082332">
+				<input type="hidden" id="destination-ryu" name="destination-ryu" value="+14402079228">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><a href="#" id="btnSend" class="btn btn--green btn--radius" onclick="sendRequest(' ')">アンケートリンク送付</a></td>
+		</tr>
+	</table>
+	</p>
+	<br> <br>　<br>　<br>　<br>　<br>　<br> <br>　<br>　<br>　<br>　<br>　<br>　<br>　<br>　<br>　<br>　<br>　<br>　
+</div>
+</body>
+
+
+</html>
