@@ -43,5 +43,6 @@ async function sendRequest(bodyText) {
 	
 	alert('問い合わせ内容を送信いたしました。')
 
+
 	return links;
 }
