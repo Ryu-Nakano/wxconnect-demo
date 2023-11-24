@@ -22,9 +22,17 @@ async function sendRequest(bodyText) {
 	const pn = document.getElementById("tell").value;
 	
 	
-	var raw = '{"TextMsg":"こちらのリンク(http://cs.co/9009Ome9t)から、ビデオ通話が可能です。", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
+	var raw = JSON.stringify({
+		"destination":"+14402079228",
+		"Lastname":"Nakano",
+		"Firstname":"Ryu",
+		"Email":"email@gmail.com",
+		"Phone":"09012345678"
+	});
+	
+	var raw = '{"destination":"+15162001844", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
 	console.log(raw);
-
+	
 	var requestOptions = {
 		method: 'POST',
 		headers: myHeaders,
@@ -35,14 +43,12 @@ async function sendRequest(bodyText) {
 	// リクエスト送信
 	// SMS: const response = await fetch("https://hooks-us.imiconnect.io/events/MOQL45SKB2", requestOptions);
 	// Email
-	//const response = await fetch("https://hooks-us.imiconnect.io/events/INT0CEP8Y4", requestOptions);
-
-	const response = await fetch("https://hooks.au.webexconnect.io/events/UEV8XDNCX2", requestOptions);
-
+	const response = await fetch("https://hooks-us.imiconnect.io/events/INT0CEP8Y4", requestOptions);
+	
 	const links = await response.json();
 	console.log(links);
 	
 	alert('問い合わせ内容を送信いたしました。')
-
+	
 	return links;
 }
