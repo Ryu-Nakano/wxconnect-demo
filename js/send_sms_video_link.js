@@ -22,6 +22,7 @@ async function sendRequest(bodyText) {
 	const ln = document.getElementById("lastname").value;
 	const ma = document.getElementById("mail").value;
 	const pn = document.getElementById("tell").value;
+	const txtMsg = 'こちらのリンクからビデオ通話が可能です。';
 	
 //	var raw = JSON.stringify({
 //		"destination":"+14402079228",
@@ -31,7 +32,7 @@ async function sendRequest(bodyText) {
 //		"Phone":"09012345678"
 //	});
 	
-	var raw = '{"TextMsg":" "こちらのリンク(http://cs.co/9009Ome9t)からビデオ通話が可能です。", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
+	var raw = '{"TextMsg":" "' + txtMsg + '", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
 	console.log(raw);
 	
 	var requestOptions = {
