@@ -35,14 +35,14 @@ async function sendRequest(bodyText) {
 	// リクエスト送信
 	// SMS: const response = await fetch("https://hooks-us.imiconnect.io/events/MOQL45SKB2", requestOptions);
 	// Email
-//	const response = await fetch("https://hooks-us.imiconnect.io/events/INT0CEP8Y4", requestOptions);
+	//const response = await fetch("https://hooks-us.imiconnect.io/events/INT0CEP8Y4", requestOptions);
+
 	const response = await fetch("https://hooks.au.webexconnect.io/events/UEV8XDNCX2", requestOptions);
 
 	const links = await response.json();
 	console.log(links);
 	
 	alert('問い合わせ内容を送信いたしました。')
-
 
 	return links;
 }
