@@ -31,7 +31,7 @@ async function sendRequest(bodyText) {
 //		"Phone":"09012345678"
 //	});
 	
-	var raw = '{"destination":"' + dt + '", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
+	var raw = '{"TextMsg":" "こちらのリンク(http://cs.co/9009Ome9t)からビデオ通話が可能です。", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
 	console.log(raw);
 	
 	var requestOptions = {
@@ -42,7 +42,8 @@ async function sendRequest(bodyText) {
 	};
 	
 	// リクエスト送信
-	const response = await fetch("https://hooks-sandbox.imiconnect.io/events/MSHGIDLG9D", requestOptions);
+//	const response = await fetch("https://hooks-sandbox.imiconnect.io/events/MSHGIDLG9D", requestOptions);
+	const response = await fetch("https://hooks.au.webexconnect.io/events/UEV8XDNCX2", requestOptions);
 	const links = await response.json();
 	console.log(links);
 	
