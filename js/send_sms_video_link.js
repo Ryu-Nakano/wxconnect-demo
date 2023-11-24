@@ -32,7 +32,7 @@ async function sendRequest(bodyText) {
 //		"Phone":"09012345678"
 //	});
 	
-	var raw = '{"TextMsg":" "' + txtMsg + '", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
+	var raw = '{"TextMsg":"' + txtMsg + '", "Lastname":"' + ln + '","Firstname":"' + fn + '", "Email":"' + ma + '", "Phone":"' + pn + '"}';
 	console.log(raw);
 	
 	var requestOptions = {
