@@ -22,7 +22,7 @@ async function sendRequest(bodyText) {
 	const ln = document.getElementById("lastname").value;
 	const ma = document.getElementById("mail").value;
 	const pn = document.getElementById("tell").value;
-	const txtMsg = 'こちらのリンクからビデオ通話が可能です。';
+	const txtMsg = 'こちらのリンク(http://cs.co/9009Ome9t)からビデオ通話が可能です。';
 	
 //	var raw = JSON.stringify({
 //		"destination":"+14402079228",
