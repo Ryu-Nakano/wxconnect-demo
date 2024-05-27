@@ -18,8 +18,8 @@ async function sendRequest() {
 
 	const comn = document.getElementById("companyName").value;
 	const cusn = document.getElementById("customerName").value;
-	const email = document.getElementById("mail").value;
-	const phone = document.getElementById("Phone").value;
+	const em = document.getElementById("mail").value;
+	const ph = document.getElementById("phone").value;
 
 // JSON Sample
 //{
@@ -29,7 +29,7 @@ async function sendRequest() {
 //    "Phone": "+818034779718"
 //}
 	
-	var raw = `{"CompanyName":"${comn}", "CustomerName":"${cusn}","Email":"${mail}", "Phone":"${phone}"}`;
+	var raw = `{"CompanyName":"${comn}", "CustomerName":"${cusn}","Email":"${em}", "Phone":"${ph}"}`;
 	console.log(raw);
 	
 	var requestOptions = {
