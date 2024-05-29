@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>font-size: medium;</style>
+	<link rel="stylesheet" href="./style/form_sms.css">
+	<script type="text/javascript" src="./js/send_sms_gbt_booked.js"></script>
+	<title>飛行機の遅延 </title>
+</head>
+
+<body bgcolor="#191919">
+
+<div style="background: url(DelayedPlane.jpg); background-repeat: repeat;">
+	<p>
+	<table>
+		<tr>
+			<td rowspan="10" width="50"></td>
+			<td width="300" id="a">会社名</td>
+			<td width="300" id="b">お客様名</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="companyName" name="companyName" required size="20" style="width:250px" value="シスコシステムズ"></td>
+			<td><input type="text" id="customerName" name="customerName" required size="20" style="width:250px"  value="Ryu Nakano"></td>
+		</tr>
+		<tr>
+			<td>電話番号</td>
+			<td>メール</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="phone" name="phone" size="20"  style="width:250px" value="+12095820655"></td>
+			<td><input type="text" id="mail" name="mail" size="20" style="width:250px"  value="rynakano@cisco.com"></td>
+		</tr>
+		<tr>
+			<td>
+				<BR>
+				<input type="hidden" id="destination" name="destination" value="+15094082332">
+				<input type="hidden" id="destination-ryu" name="destination-ryu" value="+14402079228">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><a href="#" id="btnSend" class="btn btn--green btn--radius" onclick="sendRequest(' ')">予約完了SMS送付</a></td>
+		</tr>
+	</table>
+	</p>
+	<p style="height: 700px;">
+	</p>
+</div>
+</body>
+
+</html>
