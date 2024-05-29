@@ -29,7 +29,7 @@ async function sendRequest() {
 //    "Phone": "+818034779718"
 //}
 	
-	var raw = `{"CompanyName":"${comn}", "CustomerName":"${cusn}","Email":"${em}", "Phone":"${ph}", "TextMsg":"${msg}" }`;
+	var raw = `{"CompanyName":"${comn}","CustomerName":"${cusn}","Email":"${em}", "Phone":"${ph}", "TextMsg":"${msg}" }`;
 	console.log(raw);
 	
 	var requestOptions = {
