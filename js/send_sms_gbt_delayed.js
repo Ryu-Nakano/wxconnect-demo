@@ -20,7 +20,7 @@ async function sendRequest() {
 	const cusn = document.getElementById("customerName").value;
 	const em = document.getElementById("mail").value;
 	const ph = document.getElementById("phone").value;
-	const msg = 'いつもお世話になっております。\n 明日、お客様の帰りの飛行機(ラスベガス発、ロサンゼルス着)便が、天候不順により遅延する可能性があるという情報を受け取りました。ロサンゼルスでの乗り継ぎが間に合わなくなる可能性がありますので、ご留意下さい。\n Thank you very much for your continued support. \n 	We have received information that your return flight (from Las Vegas to Los Angeles) may be delayed tomorrow due to inclement weather. Please be advised that you may not be able to make your connection in Los Angeles in time.';
+	const msg = 'いつもお世話になっております。\\n 明日、お客様の帰りの飛行機(ラスベガス発、ロサンゼルス着)便が、天候不順により遅延する可能性があるという情報を受け取りました。ロサンゼルスでの乗り継ぎが間に合わなくなる可能性がありますので、ご留意下さい。\\n Thank you very much for your continued support. \\n 	We have received information that your return flight (from Las Vegas to Los Angeles) may be delayed tomorrow due to inclement weather. Please be advised that you may not be able to make your connection in Los Angeles in time.';
 // JSON Sample
 //{
 //    "CompanyName": "シスコシステムズ",
@@ -29,7 +29,7 @@ async function sendRequest() {
 //    "Phone": "+818034779718"
 //}
 	
-	var raw = `{"CompanyName":"${comn}", "CustomerName":"${cusn}","Email":"${em}", "Phone":"${ph}", "TextMsg":"${msg}"}`;
+	var raw = `{"CompanyName":"${comn}", "CustomerName":"${cusn}","Email":"${em}", "Phone":"${ph}", "TextMsg":"${msg}" }`;
 	console.log(raw);
 	
 	var requestOptions = {
@@ -49,4 +49,3 @@ async function sendRequest() {
 	
 	return 0;
 }
-
