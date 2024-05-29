@@ -1,0 +1,165 @@
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.sum::before {
+  content: ' - ';
+  line-height: 20px;
+}
+
+
+li.check{
+  position: relative;
+}
+
+li.check::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: .5em;
+  left: -1.5em;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #25AF01;
+  border-bottom: 2px solid #25AF01;
+  transform: rotate(-45deg);
+}
+
+li.stred {
+    list-style:  none;      /* デフォルトのアイコンを消す */
+    position: relative;
+}
+
+li.stred::before{
+    content:  "";     /* 空の要素作成 */
+    width:  15px;               /* 幅指定 */
+    height:  15px;              /* 高さ指定 */
+    display:  inline-block;     /* インラインブロックにする */
+    background-color: #ba1d27;  /* 背景色指定 */
+    border-radius:  50%;        /* 要素を丸くする */
+    position:  relative;        /* 位置調整 */
+    top: 2px;                  /* 位置調整 */
+    margin-right: 5px;          /* 余白指定 */
+}
+
+
+li.stora {
+    list-style:  none;      /* デフォルトのアイコンを消す */
+    position: relative;
+}
+
+li.stora::before{
+    content:  "";     /* 空の要素作成 */
+    width:  15px;               /* 幅指定 */
+    height:  15px;              /* 高さ指定 */
+    display:  inline-block;     /* インラインブロックにする */
+    background-color: #dd8450;  /* 背景色指定 */
+    border-radius:  50%;        /* 要素を丸くする */
+    position:  relative;        /* 位置調整 */
+    top: 2px;                  /* 位置調整 */
+    margin-right: 5px;          /* 余白指定 */
+}
+
+li.senti {
+  list-style:  none;      /* デフォルトのアイコンを消す */
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #e1f2ae;
+  width: 100px;
+}
+
+
+li.senti::after{
+    content:  "→";     /* 空の要素作成 */
+    width:  15px;               /* 幅指定 */
+    height:  15px;              /* 高さ指定 */
+    display:  inline-block;     /* インラインブロックにする */
+    color: #dd8450;  /* 背景色指定 */
+    position:  relative;        /* 位置調整 */
+    top: 2px;                  /* 位置調整 */
+    margin-right: 5px;          /* 余白指定 */
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+table.border {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #cccccc;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+}
+
+th.no,
+td.no {
+  border: 0px;
+  padding: 10px;
+}
+
+
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.selection {
+  width: 150px;
+  border-radius: 5px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #b9b9b9;
+}
+
+.action{
+  width: 100px;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn--green {
+  background-color: #00c853;
+}
+
+.btn--navy {
+  background-color: #007aa3;
+  color: #f7f7f7;
+}
