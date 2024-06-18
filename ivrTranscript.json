@@ -1,0 +1,53 @@
+{
+  "conversation" : [
+    {
+      "bot" : {
+        "confidence" : 1.0,
+        "intentId" : "projects/dcloudcc-jp-dbms/locations/global/agent/intents/69ae6bcb-3722-400f-8429-67eeac119fd0",
+        "intentName" : "Hello (Opening)",
+        "parameters" : {
+          
+        },
+        "reply" : "ご用件は何でしょうか？  AIが担当させて頂きます。",
+        "timestamp" : 1713861469104
+      },
+      "customer" : {
+        "query" : "Hello",
+        "sentiment" : 0.0,
+        "timestamp" : 1713861469104
+      }
+    },
+    {
+      "bot" : {
+        "confidence" : 1.0,
+        "intentId" : "projects/dcloudcc-jp-dbms/locations/global/agent/intents/e1ebf58f-b873-4543-bf19-3735b1277edc",
+        "intentName" : "Escalation Intent",
+        "parameters" : {
+          "Issue" : "",
+          "PayRollType" : [
+          ],
+          "SecurityNo" : "",
+          "date-time" : [
+          ],
+          "industry" : "NA",
+          "language" : "",
+          "last-name" : "",
+          "location" : "",
+          "number" : "",
+          "person" : {
+            "name" : "中野"
+          },
+          "phone-number" : "",
+          "zeiHinmoku" : "test"
+        },
+        "reply" : "担当者へ、おつなぎしますので、しばらくお待ちください。",
+        "timestamp" : 1713861485467
+      },
+      "customer" : {
+        "query" : "担当者へ転送 を製造業 担当の中野さんお願いします",
+        "sentiment" : 0.0,
+        "timestamp" : 1713861485467
+      }
+    }
+  ]
+}
