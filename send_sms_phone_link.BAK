@@ -21,7 +21,7 @@ td.a {
 
 </style>
 
-<div style="background: url(phoneReq.jpg); background-repeat: no-repeat; width:100%; height:100%">
+<div style="background: url(phoneReq.jpg); background-repeat: no-repeat;">
 	<p>
 	</p>
 	<p >
