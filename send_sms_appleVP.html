@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://notify-avp.glitch.me/form_sms_apv.css">
+	<script type="text/javascript" src="https://notify-avp.glitch.me/send_sms_avp.js"></script>
+	<title>WebexOne 2024 - Apple Vision Pro 通知フォーム </title>
+  
+  <style>
+  </style>
+  
+  </head>
+<body>
+	<div class="main">
+	<p>
+	<a href="#" id="btnUpd" class="btn btn--black" onclick="updateRec()">更新ボタン</a>
+	</p>
+	<p>
+	<table>
+		<tr>
+			<td width="150" id="time_0">開始時間</td>
+			<td width="150" id="company_0">会社名</td>
+			<td width="150" id="name_0">お名前</td>
+			<td width="150" id="sales_0">担当Sales</td>
+			<td width="150" id="tel_0">電話番号</td>
+			<td width="300" id="btnSend_0"></td>
+		</tr>
+		<tr>
+			<td><input type="text" id="time_1" name="time_1" required size="20" value="12:00"></td>
+			<td><input type="text" id="company_1" name="company_1" required size="20" value="会社名"></td>
+			<td><input type="text" id="name_1" name="name_1" required size="20" value="お名前"></td>
+			<td><input type="text" id="sales_1" name="sales_1" required size="20" value="担当Sales"></td>
+			<td><input type="text" id="tel_1" name="tel_1" required size="20" value="+819029132463"></td>
+			<td><a href="#" id="btnSend_1" class="btn btn--green" onclick="sendRequest('_1')">ご案内送付</a></td>
+		</tr>
+		<tr>
+			<td><input type="text" id="time_2" name="time_2" required size="20" value="12:30"></td>
+			<td><input type="text" id="company_2" name="company_2" required size="20" value=""></td>
+			<td><input type="text" id="name_2" name="name_2" required size="20" value=""></td>
+			<td><input type="text" id="sales_2" name="sales_2" required size="20" value="jhiramur/serikawa/seki"></td>
+			<td><input type="text" id="tel_2" name="tel_2" required size="20" value=""></td>
+			<td><a href="#" id="btnSend_2" class="btn btn--green" onclick="sendRequest('_2')">ご案内送付</a></td>
+		</tr>
+		<tr>
+			<td colspan="5" width="100" scope="col">基調講演</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="time_3" name="time_3" required size="20" value="13:45"></td>
+			<td><input type="text" id="company_3" name="company_3" required size="20" value="トヨタ自動車株式会社"></td>
+			<td><input type="text" id="name_3" name="name_3" required size="20" value="西岡"></td>
+			<td><input type="text" id="sales_3" name="sales_3" required size="20" value="miyamoto/serikawa/sekii"></td>
+			<td><input type="text" id="tel_3" name="tel_3" required size="20" value="+8170xxxxyyyy"></td>
+			<td><a href="#" id="btnSend_3" class="btn btn--green" onclick="sendRequest('_3')">ご案内送付</a></td>
+		</tr>
+		<tr>
+			<td colspan="5" width="100" scope="col">分科会１</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="time_4" name="time_4" required size="20" value="14:50"></td>
+			<td><input type="text" id="company_4" name="company_4" required size="20" value=" 株式会社ＴＫＣ"></td>
+			<td><input type="text" id="name_4" name="name_4" required size="20" value="市川"></td>
+			<td><input type="text" id="sales_4" name="sales_4" required size="20" value="seisaito/shuhaseg/tkito"></td>
+			<td><input type="text" id="tel_4" name="tel_4" required size="20" value="+818053240072"></td>
+			<td><a href="#" id="btnSend_4" class="btn btn--green" onclick="sendRequest('_4')">ご案内送付</a></td>
+		</tr>
+		<tr>
+			<td colspan="5" width="100" scope="col">分科会２</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="time_5" name="time_5" required size="20" value="15:50"></td>
+			<td><input type="text" id="company_5" name="company_5" required size="20" value="関西電力株式会社"></td>
+			<td><input type="text" id="name_5" name="name_5" required size="20" value="永山様"></td>
+			<td><input type="text" id="sales_5" name="sales_5" required size="20" value="seitakahashi/mioshima/shimizu"></td>
+			<td><input type="text" id="tel_5" name="tel_5" required size="20" value="+818080772099"></td>
+			<td><a href="#" id="btnSend_5" class="btn btn--green" onclick="sendRequest('_5')">ご案内送付</a></td>
+		</tr>
+		<tr>
+			<td colspan="5" width="100" scope="col">分科会３</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="time_6" name="time_6" required size="20" value="16:50"></td>
+			<td><input type="text" id="company_6" name="company_6" required size="20" value="株式会社イトーキ"></td>
+			<td><input type="text" id="name_6" name="name_6" required size="20" value="長尾様、伊藤"></td>
+			<td><input type="text" id="sales_6" name="sales_6" required size="20" value="akiba/serikawa"></td>
+			<td><input type="text" id="tel_6" name="tel_6" required size="20" value="+8170xxxxyyyy"></td>
+			<td><a href="#" id="btnSend_6" class="btn btn--green" onclick="sendRequest('_6')">ご案内送付</a></td>
+		</tr>
+		<tr>
+			<td colspan="5" width="100" scope="col">分科会４</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="time_7" name="time_7" required size="20" value="18:00"></td>
+			<td><input type="text" id="company_7" name="company_7" required size="20" value="株式会社トヨタシステムズ"></td>
+			<td><input type="text" id="name_7" name="name_7" required size="20" value="川合様、石神"></td>
+			<td><input type="text" id="sales_7" name="sales_7" required size="20" value="jhiramur/serikawa/sekii"></td>
+			<td><input type="text" id="tel_7" name="tel_7" required size="20" value="+818011879923"></td>
+			<td><a href="#" id="btnSend_7" class="btn btn--green" onclick="sendRequest('_7')">ご案内送付</a></td>
+		</tr>
+		<tr>
+			<td><input type="text" id="time_8" name="time_8" required size="20" value="18:30"></td>
+			<td><input type="text" id="company_8" name="company_8" required size="20" value="ノボ ノルディスク ファーマ株式会社"></td>
+			<td><input type="text" id="name_8" name="name_8" required size="20" value="畠山"></td>
+			<td><input type="text" id="sales_8" name="sales_8" required size="20" value="chiimai/shuikeda/konqi"></td>
+			<td><input type="text" id="tel_8" name="tel_8" required size="20" value=""></td>
+			<td><a href="#" id="btnSend_8" class="btn btn--green" onclick="sendRequest('_8')">ご案内送付</a></td>
+		</tr>
+		<tr>
+			<td><input type="text" id="time_9" name="time_9" required size="20" value="19:00"></td>
+			<td><input type="text" id="company_9" name="company_9" required size="20" value="東芝インフォメーションシステムズ株式会社"></td>
+			<td><input type="text" id="name_9" name="name_9" required size="20" value="濁川様、鈴木"></td>
+			<td><input type="text" id="sales_9" name="sales_9" required size="20" value="moriguchi/serikawa/uratake"></td>
+			<td><input type="text" id="tel_9" name="tel_9" required size="20" value="+818022846604"></td>
+			<td><a href="#" id="btnSend_9" class="btn btn--green" onclick="sendRequest('_9')">ご案内送付</a></td>
+		</tr>
+		<tr>
+			<td><input type="text" id="time_10" name="time_10" required size="20" value="19:30"></td>
+			<td><input type="text" id="company_10" name="company_10" required size="20" value="会社名"></td>
+			<td><input type="text" id="name_10" name="name_10" required size="20" value="お名前"></td>
+			<td><input type="text" id="sales_10" name="sales_10" required size="20" value="担当Sales"></td>
+			<td><input type="text" id="tel_10" name="tel_10" required size="20" value="+8170xxxxyyyy"></td>
+			<td><a href="#" id="btnSend_10" class="btn btn--green" onclick="sendRequest('_10')">ご案内送付</a></td>
+		</tr>
+	</table>
+	</p>
+	<p> 送付内容 </p>
+	<textarea type="text" id="context" name="context" size="2000" cols="100" rows="10">ご予約された「Apple Vision Proの デモ体験」の開始５分前です。\nデモ展示エリア内の「Apple Vision Pro」コーナーまで、お越しください。</textarea>
+
+	<p>
+		サンプル：<br>
+		$(n2.inboundWebhook.cname) 様 <br>
+		--送付内容カスタマイズ部分-- ここから --- <br>
+		ご予約された「Apple Vision Proの デモ体験」の開始５分前です。<br>
+		デモ展示エリア内の「Apple Vision Pro」コーナーまで、お越しください。<br>
+		-- ここまで -- <br>
+		お客様の開始予定時刻は、$(n2.inboundWebhook.time)です。
+	</p>
+	</div>
+
+</body>
+
+
+</html>
