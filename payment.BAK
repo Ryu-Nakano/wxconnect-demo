@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>æ±ºæ¸ˆç”»é¢</title>
+    <title>ŒˆÏ‰æ–Ê</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -56,24 +56,24 @@
 </head>
 <body>
     <div class="container">
-        <h1>æ±ºæ¸ˆç”»é¢</h1>
+        <h1>ŒˆÏ‰æ–Ê</h1>
         <form>
-            <label for="name">åå‰</label>
-            <input type="text" id="name" name="name" placeholder="åå‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„" required>
+            <label for="name">–¼‘O</label>
+            <input type="text" id="name" name="name" placeholder="–¼‘O‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢" required>
             
-            <label for="email">ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹</label>
-            <input type="email" id="email" name="email" placeholder="ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„" required>
+            <label for="email">ƒ[ƒ‹ƒAƒhƒŒƒX</label>
+            <input type="email" id="email" name="email" placeholder="ƒ[ƒ‹ƒAƒhƒŒƒX‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢" required>
             
-            <label for="card-number">ã‚«ãƒ¼ãƒ‰ç•ªå·</label>
-            <input type="number" id="card-number" name="card-number" placeholder="ã‚«ãƒ¼ãƒ‰ç•ªå·ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„" required>
+            <label for="card-number">ƒJ[ƒh”Ô†</label>
+            <input type="number" id="card-number" name="card-number" placeholder="ƒJ[ƒh”Ô†‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢" required>
             
-            <label for="expiry-date">æœ‰åŠ¹æœŸé™</label>
+            <label for="expiry-date">—LŒøŠúŒÀ</label>
             <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
             
             <label for="cvv">CVV</label>
-            <input type="number" id="cvv" name="cvv" placeholder="CVVã‚’å…¥åŠ›ã—ã¦ãã ã•ã„" required>
+            <input type="number" id="cvv" name="cvv" placeholder="CVV‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢" required>
             
-            <button type="submit">æ”¯æ‰•ã†</button>
+            <button type="submit">Žx•¥‚¤</button>
         </form>
     </div>
 </body>
